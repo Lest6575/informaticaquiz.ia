@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA na Educação | Quiz Interativo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="marca">
+            <span class="icone">✳</span>
+            <div>
+                <h2>IA na Educação</h2>
+                <p>Feira Cultural • Quiz Interativo</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="introducao" id="inicio">
+            <span class="etiqueta">TECNOLOGIA E CONHECIMENTO</span>
+
+            <h1>Inteligência Artificial na Educação</h1>
+
+            <p class="descricao">
+                A IA pode transformar a maneira como aprendemos.
+                Mas quais são seus benefícios e riscos?
+                Teste seus conhecimentos e descubra!
+            </p>
+
+            <div class="topicos">
+                <article class="cartao">
+                    <span class="simbolo">✦</span>
+                    <h3>Benefícios</h3>
+                    <p>Como a IA pode auxiliar nos estudos.</p>
+                </article>
+
+                <article class="cartao">
+                    <span class="simbolo">!</span>
+                    <h3>Malefícios</h3>
+                    <p>Os riscos do uso inadequado.</p>
+                </article>
+
+                <article class="cartao">
+                    <span class="simbolo">✓</span>
+                    <h3>Seu conhecimento</h3>
+                    <p>Descubra o que você sabe sobre o tema.</p>
+                </article>
+            </div>
+
+            <button id="botao-iniciar" class="botao-principal">
+                Iniciar questionário →
+            </button>
+
+            <p class="nota">Rápido e gratuito • Sem cadastro</p>
+        </section>
+
+        <section id="quiz" class="quiz escondido">
+            <div class="progresso">
+                <span id="contador"></span>
+                <span id="pontuacao"></span>
+            </div>
+
+            <div class="barra">
+                <div id="barra-preenchida"></div>
+            </div>
+
+            <h2 id="pergunta"></h2>
+
+            <div id="alternativas" class="alternativas"></div>
+
+            <p id="feedback" aria-live="polite"></p>
+
+            <button id="botao-proximo" class="botao-principal escondido">
+                Próxima pergunta →
+            </button>
+        </section>
+
+       <section id="resultado" class="quiz escondido">
+
+    <span class="etiqueta">QUESTIONÁRIO CONCLUÍDO</span>
+    <h2 id="titulo-resultado">Seu resultado</h2>
+    <p id="texto-resultado"></p>
+
+    <button id="botao-reiniciar" class="botao-principal">
+        Jogar novamente ↻
+    </button>
+
+    <!-- NOVO BOTÃO -->
+    <button id="botao-inicio" class="botao-secundario">
+        ← Voltar ao início
+    </button>
+
+</section>
+    </main>
+
+    <footer>
+        <p>A tecnologia é uma ferramenta. O importante é como a usamos.</p>
+    </footer>
+
+</body>
+</html>
